@@ -350,7 +350,7 @@ table td {
   color: var(--third-color);
 }
 
-/**/
+/*SLIDER INFINITO*/
 .skills {
   overflow: hidden; /* Oculta el contenido que sale del contenedor */
   width: 700px; /* Ajusta esto según tu diseño */

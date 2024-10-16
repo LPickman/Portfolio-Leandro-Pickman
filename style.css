@@ -345,9 +345,19 @@ table td {
   font-weight: 300;
 }
 
+.row-light a,
+.row-dark a {
+  color: var(--second-color);
+}
+
 /*Download CV*/
 .download-cv {
-  color: var(--third-color);
+  color: var(--third-color) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-cv:hover {
+  color: var(--second-color) !important;
 }
 
 /*SLIDER INFINITO*/

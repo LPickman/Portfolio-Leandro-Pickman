@@ -22,7 +22,7 @@ html {
 }
 
 .scroll-margin {
-  scroll-margin-top: 100px; /* Ajusta el valor según el espacio que quieras dejar */
+  scroll-margin-top: 80px; /* Ajusta el valor según el espacio que quieras dejar */
 }
 
 .scroll-margin-1 {
@@ -348,4 +348,43 @@ table td {
 /*Download CV*/
 .download-cv {
   color: var(--third-color);
+}
+
+/**/
+.skills {
+  overflow: hidden; /* Oculta el contenido que sale del contenedor */
+  width: 700px; /* Ajusta esto según tu diseño */
+  border-radius: 45px;
+}
+
+.skillbar {
+  display: flex;
+  flex-direction: row;
+  width: calc(
+    200%
+  ); /* Asegúrate de que sea el doble para el efecto de repetición */
+  animation: slide 30s linear infinite; /* Velocidad de desplazamiento */
+}
+
+.skill {
+  min-width: 100px; /* Ajusta según el tamaño de tus íconos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animación para mover el slider */
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Inicia en la posición original */
+  }
+  50% {
+    transform: translateX(
+      -50%
+    ); /* Mueve el contenido a la mitad de su tamaño total */
+  }
+  100% {
+    transform: translateX(0); /* Vuelve a la posición original */
+  }
 }
